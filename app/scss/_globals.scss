@@ -1,0 +1,75 @@
+htm {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Public Sans", sans-serif;
+  font-size: $font-medium;
+  font-weight: 300;
+  color: $Grayish_Blue;
+  line-height: 1.6;
+
+  &.no-scroll {
+    overflow: hidden;
+  }
+}
+
+a,
+a:visited,
+a:hover {
+  text-decoration: none;
+}
+
+//spacing
+// .container {
+//   padding-left: 1.5rem;
+//   padding-right: 1.5rem;
+// }
+
+//flexbox
+.flex {
+  display: flex;
+
+  &-jc-sb {
+    justify-content: space-between;
+  }
+
+  &-jc-c {
+    justify-content: center;
+  }
+
+  &-ai-c {
+    align-items: center;
+  }
+}
+
+// buttons
+.button {
+  background: linear-gradient(to right, $Lime_Green, $Bright_Cyan);
+  padding: 0.5rem 1.345rem;
+  border-radius: 50px;
+}
+
+// menu visibility
+.hide-for-mobile {
+  //tablet & mobile
+  @include break-points-down(medium) {
+    display: none;
+  }
+}
+
+.hide-for-desktop {
+  //hide for desktop viewport
+  @include break-points-up(large) {
+    display: none;
+  }
+}
