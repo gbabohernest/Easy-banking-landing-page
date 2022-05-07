@@ -1,17 +1,13 @@
 .easybank_footer {
   background-color: $Dark_Blue;
-  //   display: flex;
-  //   flex-flow: column wrap;
-  //   justify-content: center;
-  //   align-items: center;
   color: $Grayish_Blue;
   font-weight: 300;
   font-size: $font-small-medium;
   padding: 1rem 0 1rem;
 
-  @include break-points-up(large) {
-    // text-align: left;
-  }
+  // @include break-points-up(large) {
+  //   // text-align: left;
+  // }
 
   &__flex-container {
     padding: 24px 13px 0;
@@ -37,7 +33,6 @@
       .social {
         margin-left: 1rem;
         margin-bottom: 0.6rem;
-        // display: inline-block;
         text-align: center;
 
         @include break-points-up(large) {
