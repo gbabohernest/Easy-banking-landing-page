@@ -9,6 +9,7 @@ const toggleHambugerMenu = () => {
     //close hamburger
     body.classList.remove("no-scroll");
     header.classList.remove("openHamburgerMenu");
+
     hasFadeElements.forEach((element) => {
       element.classList.remove("fade-in");
       element.classList.add("fade-out");
